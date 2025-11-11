@@ -12,6 +12,7 @@
         <input type='email' name='email' id='email'placeholder="your email"/>
         </label>
         </div>
+        <div class='position-container'>
         <label for='position'>
         <select id='position'>
 
@@ -21,6 +22,7 @@
           <option>Manager</option>
           </label>
         </select>
+        </div>
         <fieldset class='radio-group'>
           <legend> Availability </legend>
           <label for='full-time'>Full-Time
@@ -28,9 +30,9 @@
             <label for='part-time'>Part-Time
             <input type='radio' name='availability' id='part-time'/></label>
         </fieldset> 
-
-        <label for='message'> Why do you want this job? </label>
+        <div class='motivation-msg'>
+        <label for='message'> Why do you want this job?</label>
         <textarea id='message' placeholder='Enter your motivation'></textarea>
-       
+       </div>
     </form>
 </div>`
