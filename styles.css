@@ -1,4 +1,7 @@
 
+body{
+    background-color: azure;
+}
 /* event flyer */
 
 
@@ -138,13 +141,27 @@ footer{
 
 /* application form cont */
 
-input:focus,textarea:focus{
+.user-information{
+    border: 2px solid blue;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.user-information input{
+    margin: 10px;
+    font-size: 1.3em;
+}
+
+.user-information input:focus,.user-information textarea:focus{
   border: 2px solid rgb(238, 238, 159);
 }
 
-input:invalid, select:invalid, textarea:invalid{
+ .user-information input:invalid, .user-information select:invalid,.user-information textarea:invalid{
   border:1px solid  red;
 }
+
 
 input:valid, select:valid, textarea:valid{
   border:green;
@@ -154,6 +171,9 @@ button:hover{
   background-color:lightblue;
 }
 
+  .user-information label{
+    font-size: 1.3em;
+  }
 
 .radio-group input[type="radio"]:checked{
 background-color: green;
@@ -165,5 +185,9 @@ background-color: green;
  }
 input:first-of-type{
   background-color: rgb(230, 226, 226);
-  outline: gainsboro;
+  outline: rgb(255, 252, 252);
+}
+
+  select #position{
+    border: 2px solid red
 }
