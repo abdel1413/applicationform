@@ -22,9 +22,6 @@ body{
    align-items: center;
  }
  
-.
-
-
 hr{
   width: 100%;
   font-size: 1.2em;
@@ -142,20 +139,26 @@ footer{
 /* application form cont */
 
 .user-information{
-    border: 2px solid blue;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 5px;
+    border:1px solid whitesmoke;
+    margin: 0 auto;
+    width: 50%;
 }
+.user-information:hover{
+     border:1px solid lightgray;
+}
+
 .user-information input{
-    margin: 10px;
-    font-size: 1.3em;
+    margin: 6px;
+   padding: 5px 0;
 }
 
 .user-information input:focus,.user-information textarea:focus{
-  border: 2px solid rgb(238, 238, 159);
+  border: 2px solid rgb(125, 138, 159);
 }
 
  .user-information input:invalid, .user-information select:invalid,.user-information textarea:invalid{
@@ -223,4 +226,42 @@ input:first-of-type{
 
   select #position{
     border: 2px solid red
+}
+
+
+.color-grid{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.color-box{
+  width:100px;
+  height: 100px;
+  margin:5px;
+  background-color: blue;
+  border-radius: 50%;
+}
+ 
+.color1{
+  background-color: #3EF2FD
+}
+.color2{
+  background-color: rgb(205,104,202)
+}
+.color3{
+  background-color: black;
+}
+.color4{
+  background-color:hsl(203,30%,22%);
+}
+.color5{
+  background-color: green;
+}
+
+
+@media (max-width: 675px ){
+   .color-box{
+     width: 50px;
+     height:50px
+   }
 }
